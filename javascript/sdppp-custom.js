@@ -120,7 +120,7 @@ export default function(sdppp) {
             widgets: node.widgets.map((widget) => ({
                 value: widget.value,
                 // 关键修改点：根据是否分组节点决定是否显示名称
-                name: isGroupNode ? (widget.label || widget.name) : '', 
+                name: '', 
                 outputType: widget.type || "toggle",
                 options: widget.options,
                 // 新增：分组节点控件占满整行（视觉效果更紧凑）
